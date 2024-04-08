@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="login-form" >
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button  
+        onclick="navigate('http://127.0.0.1:5500/homepage.html')"
+        type="submit">Login</button>
+        <section class="flex">
+            <label for="forgetpass"></label>
+            <input type="checkbox" name="forgetpass" id="forgetpass">
+            <p>Remember <u 
+                onclick="navigate('http://127.0.0.1:5500/register.html')"
+
+                class="colour1">Forgot password</u></p>
+        </section>
+       
+        <p>Not a knockandian yet? <u 
+            onclick="navigate('http://127.0.0.1:5500/register.html')"
+            class="colour">Register</u> Register</p>
+
+    </form>
+    <script>
+   function navigate(url){
+    window.location.href = url
+   }
+    </script>
+
+
+</body>
+</html>
